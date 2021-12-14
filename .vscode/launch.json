@@ -1,0 +1,42 @@
+{
+  // 使用 IntelliSense 以得知可用的屬性。
+  // 暫留以檢視現有屬性的描述。
+  // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Script",
+      "program": "${workspaceFolder}/script.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node"
+    },
+    {
+      "name": "Feed Input",
+      "program": "${workspaceFolder}/input.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node",
+      // ==== Set env, flags, and args here ====
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": "3000"
+      },
+      "runtimeArgs": ["--log-colour"],
+      "args": ["firstArg", "secondArg"]
+    },
+    {
+      "name": "CosmJS",
+      "program": "${workspaceFolder}/cosmjs.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node"
+    }
+  ]
+}

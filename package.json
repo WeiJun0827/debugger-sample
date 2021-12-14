@@ -1,0 +1,16 @@
+{
+  "name": "debugger-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cosmjs/proto-signing": "^0.26.5",
+    "axios": "^0.24.0"
+  }
+}
